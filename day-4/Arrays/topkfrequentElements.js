@@ -23,3 +23,10 @@ let nums = [3, 0, 1, 0],
   k = 1;
 
 console.log(topKFrequent(nums, k)); // 98.4% O(nlog n)
+
+/*
+1. create a frequency map for the array
+2. create a array with the element and frequency
+3. sort the array by frequency
+4. then output the k elements
+ */

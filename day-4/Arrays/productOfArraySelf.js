@@ -32,3 +32,19 @@ var productExceptSelf = function (nums) {
 let nums = [1, 2, 3, 4];
 
 console.log(productExceptSelf(nums));
+
+/**
+ * 1st solution
+ * 1. run a loop from 0 to len
+ * 2. run a second loop from 0 to len
+ * 3. check if i !== j and j< nums.length then return the multiplied product
+ * 4. push it to the output array
+ * 5. return the result
+ */
+
+/**
+ * 2nd solution
+ * 1. Find the array with prefix multiplied soltuion
+ * 2. find the array with postfix muliplied solution
+ * 3. result
+ */

@@ -35,6 +35,12 @@ var longestConsecutive = function (nums) {
   //     maxScore = Math.max(maxScore, score);
   //   }
   //   return maxScore;
+  // const isStreak = (nums, curr) => {
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] === curr) return true;
+  //   }
+  //   return false;
+  // };
   // 0(N) using hashSet didn't work for large set of i/p
   //   let maxScore = 0;
   //   const set = new Set(nums);
@@ -48,12 +54,7 @@ var longestConsecutive = function (nums) {
   //     maxScore = Math.max(maxScore, score);
   //   }
   //   return maxScore;
-  // const isStreak = (nums, curr) => {
-  //   for (let i = 0; i < nums.length; i++) {
-  //     if (nums[i] === curr) return true;
-  //   }
-  //   return false;
-  // };
+
   // optimised for my solution 99% solution
   if (!nums.length) return 0;
   let maxScore = 0;

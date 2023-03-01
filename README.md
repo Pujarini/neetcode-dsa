@@ -14,4 +14,4 @@ Tracking my DSA preparation here
 ## Link to practise
 
 - [Neetcode](https://neetcode.io/practice)
- - March Daily Leetcode challende
+ - March Daily Leetcode challenge

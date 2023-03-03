@@ -9,6 +9,8 @@ Tracking my DSA preparation here
 - [Day-5](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-5/Arrays)
 - [Day-6](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-6/twoPointers)
 - [Day-7](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-7/sortingAlgos)
+- [Day-8](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-8/leetcode)
+- [Day-9](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-9/slidingWindow)
 
 
 ## Link to practise

@@ -8,7 +8,6 @@ var compress = function (chars) {
       count++;
     } else {
       chars[idx] = curr;
-      console.log(curr, count);
       if (count > 1) {
         let strCount = count.toString();
         for (let j = 0; j < strCount.length; j++) {

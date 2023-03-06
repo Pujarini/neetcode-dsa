@@ -14,7 +14,7 @@ var lengthOfLongestSubstring = function (s) {
   return max;
 };
 
-console.log(lengthOfLongestSubstring("pwwkew"));
+console.log(lengthOfLongestSubstring("abcabcbb"));
 
 /**
  * 1. create a set with the elements

@@ -11,6 +11,10 @@ Tracking my DSA preparation here
 - [Day-7](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-7/sortingAlgos)
 - [Day-8](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-8/leetcode)
 - [Day-9](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-9/slidingWindow)
+- [Day-10](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-10/leetcode)
+- [Day-11](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-11/leetcode)
+- [Day-12](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-12/neetcode)
+- [Day-13](https://github.com/Pujarini/neetcode-dsa/tree/develop/day-13/neetcode/stacks)
 
 
 ## Link to practise

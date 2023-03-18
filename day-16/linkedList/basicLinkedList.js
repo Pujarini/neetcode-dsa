@@ -63,6 +63,16 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    var curr = this.head;
+    var counter = 0;
+    while (counter !== index) {
+      curr = curr.next;
+      counter++;
+    }
+    return curr;
+  }
 }
 
 var list = new SinglyLinkedList();
@@ -75,4 +85,6 @@ list.pop();
 list.pop();
 list.shift();
 list.unshift("node0");
+console.log(list.get(2));
+
 console.log(list);

@@ -6,6 +6,7 @@ Tracking my DSA preparation here
 - [x]  Two pointers
 - [x]  Sliding window
 - [x]  Stacks
+- [ ]  Linked List (Currently in progress)
 - [ ]  Binary Search
 - [ ]  Graph
 - [ ]  Trees

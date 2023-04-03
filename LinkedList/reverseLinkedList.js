@@ -1,28 +1,27 @@
 var reverseList = function (head) {
-  //iteratively 62.31%
-  //   let prev = null;
-  //   let curr = head;
-  //   let next = null;
-  //   while (curr !== null) {
-  //     let temp = curr.next;
-  //     curr.next = prev;
-  //     prev = curr;
-  //     curr = temp;
-  //   }
-  //   return prev;
-  //recursively (not very very clear)
-  if (head === null || head.next === null) {
+  // iteratively 61.71%  O(n)
+  // let curr = head;
+  // let prev = null;
+  // let temp = null;
+  // while (curr !== null) {
+  //   temp = curr.next;
+  //   curr.next = prev;
+  //   prev = curr;
+  //   curr = temp;
+  // }
+  // return prev;
+  //recursively 34.67%
+  if (head?.next == null) {
     return head;
   }
-
-  let newHead = reverseList(head.next);
-  let newNext = head.next;
-  newNext.next = head;
+  const prev = reverseList(head.next);
+  head.next.next = head;
   head.next = null;
-  return newHead;
+  return prev;
 };
 
 /**
+ * iteratively
  * 1. take 2 pointers curr and prev
  * 2. point curr --> head
  * 3. store the next node in a temp variable (without reverse) for the reference
@@ -31,4 +30,11 @@ var reverseList = function (head) {
  * 5. prev --> curr
  * 6. curr --> temp
  * 7. return the prev
+ *
+ * recursively
+ * 1. base case until head.next is null make it the head;
+ * 2. recursive call head.next and store it in prev
+ * 3. make head.next.next = head ; breaks the link and reverses it
+ * 4. makes head.next = null
+ * 5. return prev;
  */

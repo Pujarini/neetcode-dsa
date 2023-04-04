@@ -14,4 +14,5 @@ let middleNode = function (head) {
  * 2. slow moves by 1 step and fast by 2 steps
  * 3. until fast is null we will get the slow as the middle node
  * 69.37%
+ * 6m
  */

@@ -6,11 +6,11 @@ Tracking my DSA preparation here
 - [x]  Two pointers
 - [x]  Sliding window
 - [x]  Stacks
-- [ ]  Linked List (Currently in progress)
+- [x]  Linked List 
+- [x]  Recursion
 - [ ]  Binary Search
 - [ ]  Graph
-- [ ]  Trees
-- [ ]  Graphs
+- [ ]  Trees (upcoming)
 - [ ]  Dynamic programming
 - [ ]  Greedy Algorithms
 - [ ]  Sorting

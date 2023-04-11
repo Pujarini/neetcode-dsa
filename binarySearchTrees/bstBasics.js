@@ -53,6 +53,19 @@ class BST {
       return curr;
     }
   }
+  bfs() {
+    let data = [];
+    let queue = [];
+    let node = this.root;
+    queue.push(this.root);
+    while (queue.length) {
+      node = queue.shift();
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
+      data.push(node.value);
+    }
+    return data;
+  }
 }
 
 let tree = new BST();
@@ -61,3 +74,13 @@ tree.insert(20);
 tree.insert(40);
 tree.insert(30);
 tree.insert(25);
+
+/**
+ * BFS traversal breadth-first search
+ * 1. take a queue and a variable to store the visited node
+ * 2. push the root node to queue
+ * 3. check if the queue is empty if it is not then pull the node from queue from begining
+ * and push to the visited variable
+ * 4. check if the pulled node has left or right if it is there then push it to the queue
+ * 5. return visited node
+ */

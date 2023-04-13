@@ -66,6 +66,38 @@ class BST {
     }
     return data;
   }
+
+  dfsPreorder() {
+    let data = [];
+    function traverse(node) {
+      data.push(node.value);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+    }
+    traverse(this.root);
+    return data;
+  }
+
+  dfsInorder() {
+    let data = [];
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      data.push(node.value);
+      if (node.right) traverse(node.right);
+    }
+    traverse(this.root);
+    return data;
+  }
+  dfsPostOrder() {
+    let data = [];
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+      data.push(node.value);
+    }
+    traverse(this.root);
+    return data;
+  }
 }
 
 let tree = new BST();
@@ -83,4 +115,25 @@ tree.insert(25);
  * and push to the visited variable
  * 4. check if the pulled node has left or right if it is there then push it to the queue
  * 5. return visited node
+ */
+
+/**
+ * DFS traversal PreOrder
+ * 1. Take a variable that stores the visited node
+ * 2. create a helper function that will check for left right nodes
+ * 3. pass the root node to the helper function and it will push the node to the variable created
+ * 4. check if there is anything to the left and call the helper function again with node.left
+ * 5. check if there is anything to the right and call the helper funtion again with node.left
+ * 6. return the variable with all the pushed nodes
+ *
+ * Inorder traversal just modify the traversal function
+ * call the helper function with node.left if there is anything to the left
+ * push the node.value to the variable
+ * call the helper function with node.right if there is anything to the right
+ *
+ * PostOrder traversal
+ * call the helper function with node.left if there is anything to the left
+ * call the helper function with node.right if there is anything to the right
+ * push the node.value to the variable
+ *
  */

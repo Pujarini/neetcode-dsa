@@ -21,6 +21,7 @@ function bfs(queue, height = 0) {
 }
 
 /**
+ * 1h
  * recursive dfs
  * 1. if no root then depth 0
  * 2. if there is then return 1 + Math.max(maxDepth(root.left), maxDepth(root.right))

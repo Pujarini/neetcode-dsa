@@ -1,5 +1,5 @@
 var productExceptSelf = function (nums) {
-  //brute force 19/22 test cases passed
+  //brute force 19/22 test cases passed 0(n2)
   //   let output = [];
   //   for (i = 0; i < nums.length; i++) {
   //     let result = 1;
@@ -20,12 +20,14 @@ var productExceptSelf = function (nums) {
     result[i] = prefix;
     prefix *= nums[i];
   }
+  console.log(result);
 
   let postfix = 1;
   for (let i = nums.length - 1; i >= 0; i--) {
     postfix = i == nums.length - 1 ? 1 : postfix * nums[i + 1];
     result[i] *= postfix;
   }
+
   return result;
 };
 
@@ -45,6 +47,12 @@ console.log(productExceptSelf(nums));
 /**
  * 2nd solution
  * 1. Find the array with prefix multiplied soltuion
+ * 0 to len-1
+ * result[i] = prefix
+ * prefix *= nums[i]
  * 2. find the array with postfix muliplied solution
+ * len-1, 0 ,i--
+ * postfix = i == len-1? 1: postfix * nums[i+1]
+ * result[i] *=postfix
  * 3. result
  */

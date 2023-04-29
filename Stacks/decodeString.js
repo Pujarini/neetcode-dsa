@@ -6,11 +6,14 @@ var decodeString = function (s) {
       stack.push(char);
       continue;
     }
+    console.log(stack);
     let str = "";
     let curr = stack.pop();
+    console.log(curr, "curr");
     while (curr !== "[") {
       // if alphabets is there before ]
       str = curr + str;
+      console.log(str, "str");
       curr = stack.pop();
     }
     let num = "";

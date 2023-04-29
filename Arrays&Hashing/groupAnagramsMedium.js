@@ -8,7 +8,7 @@ var groupAnagrams = function (strs) {
       .join("");
     map.get(group) ? map.get(group).push(word) : map.set(group, [word]);
   }
-
+b
   return [...map.values()];
 };
 

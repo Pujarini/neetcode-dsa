@@ -6,7 +6,6 @@ var isValid = function (s) {
     } else {
       if (stack.length === 0) return false;
       let top = stack.pop();
-      console.log(top);
       if (
         (top === "(" && char !== ")") ||
         (top === "[" && char !== "]") ||
